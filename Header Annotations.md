@@ -135,11 +135,19 @@ Ignore the metadata from Composite View <br />
 
 ## VDM Annotations
 
+**View Type**
+
 ```
 @VDM.viewType:
  #BASIC
  #COMPOSITE
  #CONSUMPTION 
+```
+
+**Lifecycle Management**
+
+```
+@VDM.lifecycle.contract.type: ?
 ```
 
 ## Object Model Performance Annotations
