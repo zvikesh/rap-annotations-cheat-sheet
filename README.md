@@ -1,9 +1,9 @@
 # Basic View
--- VDM
-@VDM.viewType: #COMPOSITE
-@VDM.lifecycle.contract.type: #PUBLIC_REMOTE_API
+- VDM
+- @VDM.viewType: #COMPOSITE
+- @VDM.lifecycle.contract.type: #PUBLIC_REMOTE_API
 
--- Object Model  Performance Annotations
+- Object Model  Performance Annotations
 @ObjectModel.usageType.serviceQuality: #C,  //(<=15 Tables)
 @ObjectModel.usageType.sizeCategory: #L (<1,00,00,000), 
 @ObjectModel.usageType.dataClass: #MASTER (Rarely Changed Data), #TRANSACTIONAL (Frequently Changed Data)
