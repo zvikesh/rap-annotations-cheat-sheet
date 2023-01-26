@@ -12,10 +12,10 @@ To estimate resource requirement for data fetching.
 Quality of service with respect to the expected performance of the CDS view. 'A' has the highest requirements and 'D' the lowest. 
 ```
 @ObjectModel.usageType.serviceQuality: 
-- #A (<=3 Tables)  | High Volume - Business Login and Background | BASIC Views for ABAP Consumption
-- #B (<=5 Tables)  | High Volume - Business Login and Background | Composite Views for ABAP Consumption
+- #A (<=3 Tables)  | High Volume - Business Login and Background        | Basic Views for ABAP Consumption
+- #B (<=5 Tables)  | High Volume - Business Login and Background        | Composite Views for ABAP Consumption
 - #C (<=15 Tables) | UI Consumption for Transactional or List Reporting | Consumption View 
-- #X (>=15 Tables) | Analytical Reporting | Consumption View for Anlaytical Engine
+- #X (>=15 Tables) | Analytical Reporting                               | Consumption View for Anlaytical Engine
 - #P Reserved for views that are used to structure the view hierarchy and that don't have any consumer outside of the hierarchy
 ```
 **Size Category**
