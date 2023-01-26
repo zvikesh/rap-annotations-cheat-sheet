@@ -115,17 +115,22 @@ For SEGW API development and ABAP Programming Model for Fiori
 }
 ```
 
-# Composite View
+## Composite View
 
 ```
 ```
 
-# Consumption or Projection View
+## Consumption or Projection View
 
 ```
 ```
 
-# Value Help View
+## API View
+
+```
+```
+
+## Value Help View
 
 ```
 ```
