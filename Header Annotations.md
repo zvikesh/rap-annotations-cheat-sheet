@@ -1,8 +1,10 @@
 
 # Metadata Annotations
+
 Used in Consumption or Projection View. 
 
 **Allow Metadata Extension**<br />
+
 To allow Metadata Extensions.<br />
 
 ```
@@ -10,6 +12,7 @@ To allow Metadata Extensions.<br />
 ```
 
 **Ignore Metadata Propogation**<br />
+
 Ignore the metadata from Composite View <br />
 
 ```
@@ -30,6 +33,7 @@ Ignore the metadata from Composite View <br />
 To estimate resource requirement for data fetching. <br />
 
 **Service Quality**<br />
+
 Quality of service with respect to the expected performance of the CDS view.<br />
 'A' has the highest requirements and 'D' the lowest. 
 
@@ -44,6 +48,7 @@ Quality of service with respect to the expected performance of the CDS view.<br 
 ```
 
 **Data Class**<br />
+
 To support the decision on cache strategies for higher layers.
 
 ```
@@ -57,6 +62,7 @@ To support the decision on cache strategies for higher layers.
 ```
 
 **Size Category**<br />
+
 Expected data volume to compute the result set.
 
 ```
@@ -69,6 +75,7 @@ Expected data volume to compute the result set.
 ```
 
 # OData Annotations
+
 *Do not use, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues.*<br />
 CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.<br />
 *Not required in Service Binding, can be renamed in Service Definition.*
@@ -76,6 +83,16 @@ CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.<br />
 ```
 @OData.entitySet.name
 @OData.entityType.name
+```
+# Object Model Annotations for CUD
+
+For SEGW API development and ABAP Programming Model for Fiori
+
+```
+@ObjectModel.createEnabled: true | false 
+@ObjectModel.updateEnabled: true | false 
+@ObjectModel.deleteEnabled: true | false
+}
 ```
 
 # Basic View
