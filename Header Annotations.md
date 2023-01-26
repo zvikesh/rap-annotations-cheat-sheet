@@ -37,8 +37,8 @@ To support the decision on cache strategies for higher layers.
 Expected data volume to compute the result set.
 ```
 @ObjectModel.usageType.sizeCategory: 
-#S   (<1000)           | #ORGANIZATIONAL or #CUSTOMIZING
-#M   (<1,00,000)       
+#S   (<1000)           | #CUSTOMIZING
+#M   (<1,00,000)       | #ORGANIZATIONAL 
 #L   (<1,00,00,000)    | #MASTER
 #XL  (<1,00,00,00,000) | #TRANSACTIONAL
 #XXL (>1,00,00,00,000) | Analytical Reporting
