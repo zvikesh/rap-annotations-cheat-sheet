@@ -7,12 +7,12 @@
  #CONSUMPTION
 ```
 ## Object Model Performance Annotations
-To estimate resource requirement for data fetching. /n
+To estimate resource requirement for data fetching. <br />
 **Service Quality**
 Quality of service with respect to the expected performance of the CDS view. 'A' has the highest requirements and 'D' the lowest. 
 ```
-@ObjectModel.usageType.serviceQuality: 
-- #A (<=3 Tables)  | High Volume - Business Login and Background        | Basic Views for ABAP Consumption
+@ObjectModel.usageType.serviceQuality:<br />
+#A (<=3 Tables)  | High Volume - Business Login and Background        | Basic Views for ABAP Consumption<br />
 - #B (<=5 Tables)  | High Volume - Business Login and Background        | Composite Views for ABAP Consumption
 - #C (<=15 Tables) | UI Consumption for Transactional or List Reporting | Consumption View 
 - #X (>=15 Tables) | Analytical Reporting                               | Consumption View for Anlaytical Engine
