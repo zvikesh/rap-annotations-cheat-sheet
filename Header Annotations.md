@@ -109,3 +109,33 @@ For SEGW API development and ABAP Programming Model for Fiori
  ignorePropagatedAnnotations: true
 }
 ```
+
+# Composite View
+
+```
+```
+
+# Consumption or Projection View
+
+```
+```
+
+# Value Help View
+
+```
+```
+
+# Text Table View
+
+```
+```
+
+# Dimension View
+
+```
+```
+
+# Analytical Query View
+
+```
+```
