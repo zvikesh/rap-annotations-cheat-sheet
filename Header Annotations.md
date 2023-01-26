@@ -1,14 +1,19 @@
+
 # Metadata Annotations
+
 @Metadata.ignorePropagatedAnnotations: true
 
 # VDM Annotations
+
 ```
 @VDM.viewType:
  #BASIC
  #COMPOSITE
- #CONSUMPTION
+ #CONSUMPTION 
 ```
+
 # Object Model Performance Annotations
+
 To estimate resource requirement for data fetching. <br />
 **Service Quality**<br />
 Quality of service with respect to the expected performance of the CDS view.<br />
@@ -43,9 +48,17 @@ Expected data volume to compute the result set.
 #XL  (<1,00,00,00,000) | #TRANSACTIONAL
 #XXL (>1,00,00,00,000) | Analytical Reporting
 ```
+
 # OData Annotations
-==Do not use==
+*Do not use, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues.*
+CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.
+*Not required in Service Binding, can be renamed in Service Definition.*
+```
+@OData.entitySet.name
+@OData.entityType.name
+```
 # Basic View
+
 ```
 @VDM.viewType: #BASIC
 ```
