@@ -20,8 +20,10 @@
 - @OData.entityType.name
 
 **Object Model CUD Annotations**
-- @ObjectModel:{
+```
+ObjectModel:{
     createEnabled: true | false, 
     updateEnabled: true | false, 
     deleteEnabled: true | false
 }
+```
