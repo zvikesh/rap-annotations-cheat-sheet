@@ -76,9 +76,9 @@ Expected data volume to compute the result set.
 
 # OData Annotations
 
-*Do not use, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues.*<br />
-CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.<br />
-*Not required in Service Binding, can be renamed in Service Definition.*
+*Note*
+- Do not use, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues. (CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES)<br />
+- Not required in Service Binding, can be renamed in Service Definition.
 
 ```
 @OData.entitySet.name
