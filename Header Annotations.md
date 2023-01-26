@@ -89,7 +89,8 @@ Expected data volume to compute the result set.
 
 ## Object Model Annotations for CUD
 
-For SEGW API development and ABAP Programming Model for Fiori
+For SEGW API development and ABAP Programming Model for Fiori.<br />
+Below annotations will impact the generated metadata of Fiori Application (ABAP Programming Model for Fiori) and OData (Refer to Datasource).
 
 ```
 @ObjectModel.createEnabled: true | false 
