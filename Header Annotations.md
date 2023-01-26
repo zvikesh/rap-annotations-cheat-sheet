@@ -55,10 +55,10 @@ To support the decision on cache strategies for higher layers.
 
 ```
 @ObjectModel.usageType.dataClass:
+#CUSTOMIZING    Universal Configuration Data | Delivered by SAP & Extended by Customer | Countries, Language etc.
+#ORGANIZATIONAL Business Configuration Data  | Created and maintained by Customer      | Company Code, Business Partner etc.
 #MASTER         Business Generated Data      | Rarely Changed                          | Purchase Order
 #TRANSACTIONAL  Business Generated Data      | Frequently Changed                      | Purchase Order Item
-#ORGANIZATIONAL Business Configuration Data  | Created and maintained by Customer      | Company Code, Business Partner etc.
-#CUSTOMIZING    Universal Configuration Data | Delivered by SAP & Extended by Customer | Countries, Language etc.
 #MIXED          If the CDS view contains data of multiple data classes                 | Analytical Reporting
 #META           How the system is configured or technical structure of entities. Used by for shipped content
 ```
@@ -109,6 +109,14 @@ For SEGW API development and ABAP Programming Model for Fiori
 ## Basic View
 
 ```
+-- Data Model
+@VDM.viewType: #BASIC
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #A | #B
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
 
 ```
 
@@ -153,4 +161,10 @@ For SEGW API development and ABAP Programming Model for Fiori
 # Analytical Query View
 
 ```
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #D
+    dataClass: #MIXED
+    sizeCategory: #XXL 
+}
 ```
