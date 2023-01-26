@@ -10,7 +10,7 @@
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
---- Anlaytical
+--- Analytical
 @Analytics : {
     dataCategory: #DIMENSION | ?, 
     dataExtraction.enabled : true | false ?Reference?
