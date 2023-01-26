@@ -6,9 +6,11 @@
 ```
 
 **Object Model  Performance Annotations**
-`@ObjectModel.usageType.serviceQuality: #C,  //(<=15 Tables)
+```
+@ObjectModel.usageType.serviceQuality: #C,  //(<=15 Tables)
 @ObjectModel.usageType.sizeCategory: #L (<1,00,00,000), 
 @ObjectModel.usageType.dataClass: #MASTER (Rarely Changed Data), #TRANSACTIONAL (Frequently Changed Data)`
+```
 
 **Metadata Annotations**
 - @Metadata.ignorePropagatedAnnotations: true
