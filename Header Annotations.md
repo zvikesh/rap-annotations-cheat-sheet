@@ -22,7 +22,7 @@ Quality of service with respect to the expected performance of the CDS view.<br 
 #D Code Push Down to HANA DB
 #P Reserved for views building hierarchy and consumed by Hierarchal View
 ```
-**Size Category**
+**Size Category**<br />
 Expected data volume to compute the result set.
 ```
 @ObjectModel.usageType.sizeCategory: 
@@ -32,7 +32,7 @@ Expected data volume to compute the result set.
 #XL  (<1,00,00,00,000)
 #XXL (>1,00,00,00,000) 
 ```
-**Data Class**
+**Data Class**<br />
 To support the decision on cache strategies for higher layers.
 ```
 @ObjectModel.usageType.dataClass:
