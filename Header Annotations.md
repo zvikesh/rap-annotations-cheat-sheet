@@ -29,7 +29,7 @@
 @VDM.viewType: #COMPOSITE
 -- Performance
 @ObjectModel.usageType:{
-    serviceQuality: #C,
+    serviceQuality: #B,
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
