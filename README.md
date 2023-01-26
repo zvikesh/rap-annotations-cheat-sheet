@@ -7,7 +7,7 @@
  #CONSUMPTION
 ```
 ## Object Model Performance Annotations
-To estimate resource requirement for data fetching.
+To estimate resource requirement for data fetching. /n
 **Service Quality**
 Quality of service with respect to the expected performance of the CDS view. 'A' has the highest requirements and 'D' the lowest. 
 ```
