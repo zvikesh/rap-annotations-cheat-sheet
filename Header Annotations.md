@@ -1,5 +1,7 @@
 
-# Metadata Annotations
+# Reference
+
+## Metadata Annotations
 
 Used in Consumption or Projection View. 
 
@@ -19,7 +21,7 @@ Ignore the metadata from Composite View <br />
 @MetadataignorePropagatedAnnotations: true | false
 ```
 
-# VDM Annotations
+## VDM Annotations
 
 ```
 @VDM.viewType:
@@ -28,7 +30,7 @@ Ignore the metadata from Composite View <br />
  #CONSUMPTION 
 ```
 
-# Object Model Performance Annotations
+## Object Model Performance Annotations
 
 To estimate resource requirement for data fetching. <br />
 
@@ -74,7 +76,7 @@ Expected data volume to compute the result set.
 #XXL (>1,00,00,00,000) | Analytical Reporting
 ```
 
-# OData Annotations
+## OData Annotations
 
 **Note**
 - *Do not use*, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues. (CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES)<br />
@@ -84,7 +86,8 @@ Expected data volume to compute the result set.
 @OData.entitySet.name
 @OData.entityType.name
 ```
-# Object Model Annotations for CUD
+
+## Object Model Annotations for CUD
 
 For SEGW API development and ABAP Programming Model for Fiori
 
@@ -95,13 +98,15 @@ For SEGW API development and ABAP Programming Model for Fiori
 }
 ```
 
-# Object Model Annotations for Text Table
+## Object Model Annotations for Text Table
 
 ```
 @ObjectModel.dataCategory: #TEXT
 ```
 
-# Basic View
+# Examples
+
+## Basic View
 
 ```
 @Metadata:{
