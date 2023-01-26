@@ -10,6 +10,11 @@
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
+--- Anlaytical
+@Analytics : {
+    dataCategory: #DIMENSION | ?, 
+    dataExtraction.enabled : true | false ?Reference?
+}
 ```
 
 # Composite View
