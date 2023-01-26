@@ -28,6 +28,7 @@ Quality of service with respect to the expected performance of the CDS view.<br 
 #D Code Push Down to HANA DB
 #P Reserved for views building hierarchy and consumed by Hierarchal View
 ```
+
 **Data Class**<br />
 To support the decision on cache strategies for higher layers.
 ```
@@ -39,6 +40,7 @@ To support the decision on cache strategies for higher layers.
 #MIXED          If the CDS view contains data of multiple data classes                 | Analytical Reporting
 #META           How the system is configured or technical structure of entities. Used by for shipped content
 ```
+
 **Size Category**<br />
 Expected data volume to compute the result set.
 ```
