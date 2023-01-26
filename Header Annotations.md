@@ -1,12 +1,14 @@
-# Header Annotations
-## VDM Annotations
+# Metadata Annotations
+@Metadata.ignorePropagatedAnnotations: true
+
+# VDM Annotations
 ```
 @VDM.viewType:
  #BASIC
  #COMPOSITE
  #CONSUMPTION
 ```
-## Object Model Performance Annotations
+# Object Model Performance Annotations
 To estimate resource requirement for data fetching. <br />
 **Service Quality**
 Quality of service with respect to the expected performance of the CDS view.<br />
@@ -41,26 +43,17 @@ To support the decision on cache strategies for higher layers.
 #META           Used by for shipped content  | how the system is configured or describes the technical structure of entities 
 MIXED           If the CDS view contains data of multiple data classes
 ```
+# OData Annotations
+
 # Basic View
-**VDM Annotations**
 ```
 @VDM.viewType: #BASIC
 ```
 **Object Model   Annotations**
 
 
-**Metadata Annotations**
-- @Metadata.ignorePropagatedAnnotations: true
 
-**OData Annotations**
 - @OData.entitySet.name
 - @OData.entityType.name
 
-**Object Model CUD Annotations**
-```
-ObjectModel:{
-    createEnabled: true | false, 
-    updateEnabled: true | false, 
-    deleteEnabled: true | false
-}
 ```
