@@ -149,7 +149,33 @@ For SEGW API development and ABAP Programming Model for Fiori
 }
 ```
 
-## API View
+## SEGW API View
+
+```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+@ObjectModel:{
+    createEnabled: true | false 
+    updateEnabled: true | false 
+    deleteEnabled: true | false
+}
+@OData{
+    entitySet.name: ***Do not use***
+    entityType.name: ***Do not use***
+}
+```
+
+## Behavoiur Definition API View
 
 ```
 @Metadata:{
