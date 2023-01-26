@@ -1,3 +1,13 @@
+# Header Annotations
+## VDM
+```
+@VDM.viewType:
+ #BASIC
+ #COMPOSITE
+ #CONSUMPTION
+
+
+```
 # Basic View
 **VDM Annotations**
 ```
