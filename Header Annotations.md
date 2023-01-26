@@ -38,6 +38,7 @@
 # Consumption or Projection View
 
 ```
+-- Metadata
 @Metadata:{
  allowExtensions: true,
  ignorePropagatedAnnotations: true
