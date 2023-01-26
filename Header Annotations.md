@@ -4,7 +4,7 @@ Used in Consumption or Projection View
 ```
 @Metadata:{
  allowExtensions: true,            | To allow Metadata Extensions
- ignorePropagatedAnnotations: true | Ignore the metadata from Composite View from being propogated to the Projection or Consumption View
+ ignorePropagatedAnnotations: true | Ignore the metadata from Composite View
 }
 ```
 # VDM Annotations
