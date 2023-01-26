@@ -144,15 +144,21 @@ Ignore the metadata from Composite View <br />
 
 ```
 @VDM.viewType:
- #BASIC
- #COMPOSITE
- #CONSUMPTION 
+#BASIC
+#COMPOSITE
+#CONSUMPTION 
+#TRANSACTIONAL 
+#CONSUMPTION
+#EXTENSION (Used by SAP)
 ```
 
 **Lifecycle Management**
 
 ```
-@VDM.lifecycle.contract.type: ?
+@VDM.lifecycle.contract.type:
+#SAP_INTERNAL_API:   (Used by SAP) for Transactional View
+#PUBLIC_LOCAL_API:   (Used by SAP) for Views published for local use in Custom Development 
+#PUBLIC_REMOTE_API:  For API Composite View 
 ```
 
 ## Object Model Performance Annotations
