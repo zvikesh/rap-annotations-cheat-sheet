@@ -1,8 +1,12 @@
 
 # Metadata Annotations
-
-@Metadata.ignorePropagatedAnnotations: true
-
+Used in Consumption or Projection View 
+```
+@Metadata:{
+ allowExtensions: true,            | To allow Metadata Extensions
+ ignorePropagatedAnnotations: true | Ignore the metadata from Composite View from being propogated to the Projection or Consumption View
+}
+```
 # VDM Annotations
 
 ```
@@ -23,7 +27,7 @@ Quality of service with respect to the expected performance of the CDS view.<br 
 @ObjectModel.usageType.serviceQuality:
 #A (<=3 Tables)   | High Volume - Business Logic and Background        | Basic Views for ABAP Consumption
 #B (<=5 Tables)   | High Volume - Business Logic and Background        | Composite Views for ABAP Consumption
-#C (<=15 Tables)  | UI Consumption for Transactional or List Reporting | Consumption View 
+#C (<=15 Tables)  | UI Consumption for Transactional or List Reporting | Consumption or Projection View 
 #D (=<100 Tables) | Analytical Reporting                               | Consumption View for Analytical Engine
 #D Code Push Down to HANA DB
 #P Reserved for views building hierarchy and consumed by Hierarchal View
