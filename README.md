@@ -16,7 +16,7 @@ Quality of service with respect to the expected performance of the CDS view. 'A'
 - #B (<=5 Tables)  | High Volume - Business Login and Background        | Composite Views for ABAP Consumption
 - #C (<=15 Tables) | UI Consumption for Transactional or List Reporting | Consumption View 
 - #X (>=15 Tables) | Analytical Reporting                               | Consumption View for Anlaytical Engine
-- #P Reserved for views that are used to structure the view hierarchy and that don't have any consumer outside of the hierarchy
+- #P Reserved for views building hierarchy and consumed by Hierarchal View
 ```
 **Size Category**
 ```
