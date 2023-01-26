@@ -30,8 +30,8 @@ To support the decision on cache strategies for higher layers.
 #TRANSACTIONAL  Business Generated Data      | Frequently Changed                      | Purchase Order Item
 #ORGANIZATIONAL Business Configuration Data  | Created and maintained by Customer      | Company Code, Business Partner etc.
 #CUSTOMIZING    Universal Configuration Data | Delivered by SAP & Extended by Customer | Countries, Language etc.
+#MIXED          If the CDS view contains data of multiple data classes                 | Analytical Reporting
 #META           How the system is configured or technical structure of entities. Used by for shipped content
-#MIXED          If the CDS view contains data of multiple data classes
 ```
 **Size Category**<br />
 Expected data volume to compute the result set.
