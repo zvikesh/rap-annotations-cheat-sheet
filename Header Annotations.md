@@ -113,16 +113,23 @@ For SEGW API development and ABAP Programming Model for Fiori
 @VDM.viewType: #BASIC
 -- Performance
 @ObjectModel.usageType:{
-    serviceQuality: #A | #B
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL
+    serviceQuality: #A,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
-
 ```
 
 ## Composite View
 
 ```
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
 ```
 
 ## Consumption or Projection View
@@ -132,6 +139,14 @@ For SEGW API development and ABAP Programming Model for Fiori
  allowExtensions: true,
  ignorePropagatedAnnotations: true
 }
+-- Data Model
+@VDM.viewType: #CONSUMPTION
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
 ```
 
 ## API View
@@ -140,6 +155,14 @@ For SEGW API development and ABAP Programming Model for Fiori
 @Metadata:{
  allowExtensions: true,
  ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
 ```
 
