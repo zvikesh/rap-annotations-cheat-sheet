@@ -1,4 +1,116 @@
 
+# Basic View
+
+```
+-- Data Model
+@VDM.viewType: #BASIC
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #A,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+```
+
+# Composite View
+
+```
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+```
+
+# Consumption or Projection View
+
+```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #CONSUMPTION
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+```
+
+# SEGW API View
+
+```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+@ObjectModel:{
+    createEnabled: true | false 
+    updateEnabled: true | false 
+    deleteEnabled: true | false
+}
+@OData{
+    entitySet.name: ***Do not use***
+    entityType.name: ***Do not use***
+}
+```
+
+# Behavoiur Definition API View
+
+```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+```
+
+# Value Help View
+
+```
+```
+
+# Text Table View
+
+```
+```
+
+# Dimension View
+
+```
+```
+
+# Analytical Query View
+
+```
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #D
+    dataClass: #MIXED
+    sizeCategory: #XXL 
+}
+```
+
 # Reference
 
 ## Metadata Annotations
@@ -96,125 +208,10 @@ Below annotations will impact the generated metadata of Fiori Application (ABAP 
 @ObjectModel.createEnabled: true | false 
 @ObjectModel.updateEnabled: true | false 
 @ObjectModel.deleteEnabled: true | false
-}
 ```
 
 ## Object Model Annotations for Text Table
 
 ```
 @ObjectModel.dataCategory: #TEXT
-```
-
-# Examples
-
-## Basic View
-
-```
--- Data Model
-@VDM.viewType: #BASIC
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #A,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-```
-
-## Composite View
-
-```
--- Data Model
-@VDM.viewType: #COMPOSITE
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-```
-
-## Consumption or Projection View
-
-```
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
--- Data Model
-@VDM.viewType: #CONSUMPTION
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-```
-
-## SEGW API View
-
-```
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
--- Data Model
-@VDM.viewType: #COMPOSITE
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-@ObjectModel:{
-    createEnabled: true | false 
-    updateEnabled: true | false 
-    deleteEnabled: true | false
-}
-@OData{
-    entitySet.name: ***Do not use***
-    entityType.name: ***Do not use***
-}
-```
-
-## Behavoiur Definition API View
-
-```
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
--- Data Model
-@VDM.viewType: #COMPOSITE
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-```
-
-## Value Help View
-
-```
-```
-
-# Text Table View
-
-```
-```
-
-# Dimension View
-
-```
-```
-
-# Analytical Query View
-
-```
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #D
-    dataClass: #MIXED
-    sizeCategory: #XXL 
-}
 ```
