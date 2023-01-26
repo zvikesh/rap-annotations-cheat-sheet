@@ -57,16 +57,12 @@ CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.<br />
 @OData.entitySet.name
 @OData.entityType.name
 ```
+
 # Basic View
 
 ```
-@VDM.viewType: #BASIC
-```
-**Object Model   Annotations**
-
-
-
-- @OData.entitySet.name
-- @OData.entityType.name
-
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
 ```
