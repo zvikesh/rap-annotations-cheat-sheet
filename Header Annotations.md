@@ -95,6 +95,12 @@ For SEGW API development and ABAP Programming Model for Fiori
 }
 ```
 
+# Object Model Annotations for Text Table
+
+```
+@ObjectModel.dataCategory: #TEXT
+```
+
 # Basic View
 
 ```
