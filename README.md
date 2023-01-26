@@ -1,16 +1,14 @@
 # Basic View
 **VDM Annotations**
 ```
-@VDM.viewType: #COMPOSITE
-@VDM.lifecycle.contract.type: #PUBLIC_REMOTE_API
+@VDM.viewType: #BASIC
 ```
-
 **Object Model  Performance Annotations**
 ```
 @ObjectModel.usageType:{
- serviceQuality: #C,  //(<=15 Tables)
+ serviceQuality: #A (<=3 Tables) | #B (<=5 Tables) | #C (<=15 Tables) | #X (?) | #P (?)
  sizeCategory: #S (<1000) | #M (<1,00,000) | #L (<1,00,00,000) | #XL (<1,00,00,00,000) | #XXL (>1,00,00,00,000)
- dataClass: #MASTER (Rarely Changed Data), #TRANSACTIONAL (Frequently Changed Data)`
+ dataClass: #MASTER (Rarely Changed) | #TRANSACTIONAL (Frequently Changed) | #ORGANIZATIONAL (Configuration) | #CUSTOMIZING (?) | #META (?) 
 }
 ```
 
