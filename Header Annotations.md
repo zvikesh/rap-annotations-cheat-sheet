@@ -81,7 +81,7 @@
  ignorePropagatedAnnotations: true
 }
 -- Data Model
-@VDM.viewType: #COMPOSITE
+@VDM.viewType: #COMPOSITE ?
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #B,
@@ -144,15 +144,14 @@ Ignore the metadata from Composite View <br />
 
 ```
 @VDM.viewType:
-#BASIC
-#COMPOSITE
-#CONSUMPTION 
-#TRANSACTIONAL 
-#CONSUMPTION
-#EXTENSION (Used by SAP)
+#BASIC         Basic View
+#COMPOSITE     Helpoer Composite View or SEGW API View
+#CONSUMPTION   Read Only Projection View
+#TRANSACTIONAL Transactional BO or Projection View
+#EXTENSION:    (Used by SAP)
 ```
 
-**Lifecycle Management**
+**VDM Lifecycle Contract**
 
 ```
 @VDM.lifecycle.contract.type:
