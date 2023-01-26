@@ -29,7 +29,7 @@
 @VDM.viewType: #COMPOSITE
 -- Performance
 @ObjectModel.usageType:{
-    serviceQuality: #B,
+    serviceQuality: #C,
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
@@ -46,7 +46,7 @@
 @VDM.viewType: #CONSUMPTION
 -- Performance
 @ObjectModel.usageType:{
-    serviceQuality: #B,
+    serviceQuality: #C,
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
