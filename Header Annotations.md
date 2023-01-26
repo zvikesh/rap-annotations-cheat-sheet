@@ -10,7 +10,7 @@
 ```
 # Object Model Performance Annotations
 To estimate resource requirement for data fetching. <br />
-**Service Quality**
+**Service Quality**<br />
 Quality of service with respect to the expected performance of the CDS view.<br />
 'A' has the highest requirements and 'D' the lowest. 
 ```
