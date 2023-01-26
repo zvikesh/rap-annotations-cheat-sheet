@@ -1,12 +1,19 @@
 
 # Metadata Annotations
-Used in Consumption or Projection View 
+Used in Consumption or Projection View. 
+
+**Allow Metadata Extension**<br />
+To allow Metadata Extensions.<br />
 
 ```
-@Metadata:{
- allowExtensions: true,            | To allow Metadata Extensions
- ignorePropagatedAnnotations: true | Ignore the metadata from Composite View
-}
+@Metadata.allowExtensions: true | false             
+```
+
+**Ignore Metadata Propogation**<br />
+Ignore the metadata from Composite View <br />
+
+```
+@MetadataignorePropagatedAnnotations: true | false
 ```
 
 # VDM Annotations
