@@ -2,10 +2,12 @@
 # Metadata Annotations
 Used in Consumption or Projection View 
 
-```@Metadata:{
+```
+@Metadata:{
  allowExtensions: true,            | To allow Metadata Extensions
  ignorePropagatedAnnotations: true | Ignore the metadata from Composite View
-}```
+}
+```
 
 # VDM Annotations
 
@@ -23,6 +25,7 @@ To estimate resource requirement for data fetching. <br />
 **Service Quality**<br />
 Quality of service with respect to the expected performance of the CDS view.<br />
 'A' has the highest requirements and 'D' the lowest. 
+
 ```
 @ObjectModel.usageType.serviceQuality:
 #A (<=3 Tables)   | High Volume - Business Logic and Background        | Basic Views for ABAP Consumption
@@ -35,6 +38,7 @@ Quality of service with respect to the expected performance of the CDS view.<br 
 
 **Data Class**<br />
 To support the decision on cache strategies for higher layers.
+
 ```
 @ObjectModel.usageType.dataClass:
 #MASTER         Business Generated Data      | Rarely Changed                          | Purchase Order
@@ -47,6 +51,7 @@ To support the decision on cache strategies for higher layers.
 
 **Size Category**<br />
 Expected data volume to compute the result set.
+
 ```
 @ObjectModel.usageType.sizeCategory: 
 #S   (<1000)           | #CUSTOMIZING
@@ -60,6 +65,7 @@ Expected data volume to compute the result set.
 *Do not use, if the length is more than 7 character Gateway will dump during SEGW generation due to offset issues.*<br />
 CL_SADL_GW_MODEL_SB_GEN_MPC_PR->/IWBEP/IF_SB_GEN_MPC_PR~GET_LOCAL_TYPES.<br />
 *Not required in Service Binding, can be renamed in Service Definition.*
+
 ```
 @OData.entitySet.name
 @OData.entityType.name
