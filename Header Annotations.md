@@ -109,10 +109,7 @@ For SEGW API development and ABAP Programming Model for Fiori
 ## Basic View
 
 ```
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
+
 ```
 
 ## Composite View
@@ -123,11 +120,19 @@ For SEGW API development and ABAP Programming Model for Fiori
 ## Consumption or Projection View
 
 ```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
 ```
 
 ## API View
 
 ```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
 ```
 
 ## Value Help View
