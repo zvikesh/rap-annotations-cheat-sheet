@@ -127,12 +127,28 @@
 # Fact View
 
 ```
-Not really used.
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #D
+    dataClass: #MIXED
+    sizeCategory: #XXL 
+}
+-- Analytical
+@Analytics: { 
+  dataCategory: #FACT
+}
 ```
 
 # Cube View
 
-Keep Cube View clean, utilize all in-built function and statements like case etc. to Composite View and consume it in Cube View.
+Keep Cube View clean, push all in-built function and statements like case etc. to Fact View and consume it in Cube View.
 
 ```
 -- Metadata
