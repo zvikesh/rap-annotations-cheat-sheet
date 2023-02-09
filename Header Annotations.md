@@ -132,6 +132,8 @@ Not really used.
 
 # Cube View
 
+Keep Cube View clean, utilize all in-built function and statements like case etc. to Composite View and consume it in Cube View.
+
 ```
 -- Metadata
 @Metadata:{
