@@ -68,6 +68,7 @@
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
+-- OData
 @ObjectModel:{
     createEnabled: true | false 
     updateEnabled: true | false 
@@ -82,6 +83,7 @@
 # Behavoiur Definition API View
 
 ```
+-- Metadata
 @Metadata:{
  allowExtensions: true,
  ignorePropagatedAnnotations: true
@@ -109,17 +111,69 @@
 # Dimension View
 
 ```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #BASIC
+-- Analytical
+@Analytics: { 
+  dataCategory: #DIMENSION
+}
 ```
 
-# Analytical Query View
+# Fact View
 
 ```
+Not really used.
+```
+
+# Cube View
+
+```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #D
     dataClass: #MIXED
     sizeCategory: #XXL 
 }
+-- Analytical
+@Analytics: { 
+  dataCategory: #CUBE
+}
+```
+
+# Query View
+
+```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- For Analytical Engine (Mandatory)
+@Analaytics.
+-- Data Model
+@VDM.viewType: #CONSUMPTION
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #D
+    dataClass: #MIXED
+    sizeCategory: #XXL 
+}
+-- Analytical
+@Analytics: { 
+  query: true      //Mandatory for consumption by Analytical Engine  
+} 
 ```
 
 # Reference
