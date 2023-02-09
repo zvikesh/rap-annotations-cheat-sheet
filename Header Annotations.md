@@ -133,7 +133,7 @@
  ignorePropagatedAnnotations: true
 }
 -- Data Model
-@VDM.viewType: #COMPOSITE
+@VDM.viewType: #BASIC | #COMPOSITE
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #D
@@ -148,7 +148,7 @@
 
 # Cube View
 
-Keep Cube View clean, push all in-built function and statements like case etc. to Fact View and consume it in Cube View.
+Keep Cube View clean, push all in-built function and statements like case etc. to Fact Composite View and consume it in Cube View.
 
 ```
 -- Metadata
