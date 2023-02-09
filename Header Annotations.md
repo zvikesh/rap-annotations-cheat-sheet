@@ -182,8 +182,8 @@ Keep Cube View clean, push all in-built function and statements like case etc. t
 @VDM.viewType: #CONSUMPTION
 -- Performance
 @ObjectModel.usageType:{
-    serviceQuality: #D
-    dataClass: #MIXED
+    serviceQuality: #D,
+    dataClass: #MIXED,
     sizeCategory: #XXL 
 }
 -- Analytical
