@@ -17,7 +17,7 @@
 }
 --- Analytical
 @Analytics : {
-    dataCategory: #DIMENSION | ?, 
+    dataCategory: #DIMENSION, 
     dataExtraction.enabled : true | false ?Reference?
 }
 ```
@@ -160,8 +160,6 @@ Not really used.
  allowExtensions: true,
  ignorePropagatedAnnotations: true
 }
--- For Analytical Engine (Mandatory)
-@Analaytics.
 -- Data Model
 @VDM.viewType: #CONSUMPTION
 -- Performance
@@ -172,7 +170,7 @@ Not really used.
 }
 -- Analytical
 @Analytics: { 
-  query: true      //Mandatory for consumption by Analytical Engine  
+  query: true  
 } 
 ```
 
@@ -293,6 +291,28 @@ Below annotations will impact the generated metadata of Fiori Application (ABAP 
 ```
 @ObjectModel.dataCategory: #TEXT
 ```
+
+## Analytical Annotations
+
+**Query generation**<br />
+
+Generates the Analytical Query with name as 2C+<DDL SQL Name> for the consumption by Analytical Engine.
+
+```
+@Anlaytical.query: true 
+```
+    
+**Data Category**<br />
+    
+```
+@Anlaytical.dataCategory:{
+  #DIMENSION
+  #FACT 
+  #CUBE  
+  #AGGREGATIONLEVEL: ?
+}
+```
+
 # Find View consuming particular Header Annotation
 
 ![](https://github.com/zvikesh/rap-annotations-cheat-sheet/blob/76fa6cb2ac073122e3185ad7d9ceeff9191cf632/2023-01-27%2000_09_19.jpg)
