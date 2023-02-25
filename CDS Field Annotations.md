@@ -45,3 +45,19 @@ Default Aggregation for Dimenion Field
 @AnalyticsDetails.query.totals: #SHOW
 ```
 
+Formula
+
+```
+@DefaultAggregation: #FORMULA
+@AnalyticsDetails.query.formula : '$projection.IntmdDebitAmtInTransCrcy' cast( cast( 1 as abap.dec(23,2)) as fis_dr_bal_wsl ) as DebitAmountInTransCrcy,  
+```
+
+Exception Aggregation
+
+```
+@AnalyticsDetails: {
+        exceptionAggregationSteps: [{ exceptionAggregationBehavior : #SUM, 
+                                      exceptionAggregationElements: ['LedgerFiscalYear']
+                                   }]
+    }
+```
