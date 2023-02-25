@@ -97,6 +97,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Fact Composite View View
 
 Fact Composite View encapsultes to get all the measures from one or more basic views and their derivation logic using Bult-In Fn, CASE etc.
+If all the measures are readily available in Basic Source View, Fact View can be skipped.
 
 ```
 -- Metadata
