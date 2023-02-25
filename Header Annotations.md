@@ -182,7 +182,7 @@ Query View will have:
 
 # API Views
 
-## SEGW API View
+## SEGW API Composite View
 
 ```
 @Metadata:{
@@ -209,7 +209,7 @@ Query View will have:
 }
 ```
 
-## Behavoiur Definition API View
+## Behavoiur Definition API ? View
 
 ```
 -- Metadata
