@@ -28,7 +28,7 @@ Also, binding value used for derivation should also have @Consumption.derivation
 ## @ValueHelp:’_AssociationName’
 This is legacy way and can be avoided as data can only be filtered by values used in on condition and affect the result due to cardinality.
 
-# Domain Value Help View
+# Domain Value Help
 
 ## Value Help View
 
