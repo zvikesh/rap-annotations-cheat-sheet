@@ -1,6 +1,6 @@
-# Basic and Consumption View Annotations
+# Basic View Annotations
 
-Semantic Annotations
+Semantic Annotations for Consumption View
 
 ```
 -- Currency
@@ -30,6 +30,13 @@ Semantic Annotations
 @ObjectModel.association.type
 @ObjectModel.text.Association
 @ObjectModel.foreignKey. association
+```
+
+Foreign Key Associations to help derivce Value Help for Consumption View
+*The cardinality of a foreign key association must be either [0..1] or [1..1] / [1].
+
+```
+@ObjectModel.foreignKey.association: '_Country'
 ```
 
 # Analytical View
