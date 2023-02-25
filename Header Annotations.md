@@ -18,7 +18,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ```
 ```
 
-## Basic View
+## Basic View (Generic)
 
 ```
 -- Data Model
@@ -76,7 +76,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 # Analytial Data Models
 
-## Basic View as Source for Cube View or Fact Composite View
+## Analytical Basic View (Source for Cube View or Fact Composite View)
 
 ```
 -- Metadata
@@ -94,10 +94,11 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-## Fact Composite View View
+## Fact Composite View
 
-Fact Composite View encapsultes to get all the measures from one or more basic views and their derivation logic using Bult-In Fn, CASE etc.
-If all the measures are readily available in Basic Source View, Fact View can be skipped.
+Fact Composite View lists all the measures from Analytical Basic View and other helper Basic Views.
+Fact Composite View will also have all the derivation logic for the measures derived using Bult-In Fn, CASE etc.
+If all the measures are readily available in Analytical Basic View, Fact View can be skipped.
 
 ```
 -- Metadata
