@@ -120,7 +120,7 @@ If all the measures are readily available in Analytical Basic View, Fact View ca
 }
 ```
 
-## Cube View
+## Cube Composite View
 
 Cube connects all the measures coming from Source View to all the Dimension Basic View.
 
@@ -155,7 +155,7 @@ Cube connects all the measures coming from Source View to all the Dimension Basi
 */
 ```
 
-## Query View
+## Query Consumption View
 
 Query View will have: 
 - UI Annotations.
