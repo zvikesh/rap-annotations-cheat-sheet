@@ -74,7 +74,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Analytial Data Models
+# Analytical Data Models
 
 ## Analytical Basic View (Source for Cube View or Fact Composite View)
 
