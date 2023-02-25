@@ -45,9 +45,11 @@ association [0..1] to I_Country as _Country on  $projection.Country = _Country.C
 @ObjectModel.foreignKey.association: '_Country'
 Country,
 }
+```
 
+```
 @ObjectModel.representativeKey: 'Country'
-define view I_CountryVH as select from I_Country {
+define view I_Country as select from t005
 ```
 
 # Analytical View
