@@ -3,17 +3,8 @@
 https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 # Generic Data Models
+
 ## Database Table
-
-```
-```
-
-## Value Help View
-
-```
-```
-
-## Text Table View
 
 ```
 ```
@@ -190,6 +181,7 @@ Query View will have:
 ```
 
 # API Views
+
 ## SEGW API View
 
 ```
