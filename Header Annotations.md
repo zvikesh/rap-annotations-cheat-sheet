@@ -98,7 +98,7 @@ If all the measures are readily available in Analytical Basic View, Fact View ca
  ignorePropagatedAnnotations: true
 }
 -- Data Model
-@VDM.viewType: #BASIC | #COMPOSITE
+@VDM.viewType: #COMPOSITE
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #D,
