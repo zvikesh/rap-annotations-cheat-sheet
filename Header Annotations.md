@@ -49,6 +49,11 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
+--- Analytical
+@Analytics : {
+    dataCategory: #DIMENSION, 
+    dataExtraction.enabled : true | false ?Reference?
+}
 ```
 
 ## Consumption or Projection View
@@ -115,7 +120,9 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Dimension View
+# Analytial Data Models
+
+## Basic View as Source for Cube View or Fact Composite View
 
 ```
 -- Metadata
@@ -125,13 +132,17 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 -- Data Model
 @VDM.viewType: #BASIC
--- Analytical
-@Analytics: { 
-  dataCategory: #DIMENSION
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #D,
+    dataClass: #MIXED,
+    sizeCategory: #XXL 
 }
 ```
 
-# Fact View
+## Fact Composite View View
+
+Fact Composite View encapsultes to get all the measures from one or more basic views and their derivation logic using Bult-In Fn, CASE etc.
 
 ```
 -- Metadata
@@ -153,9 +164,9 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Cube View
+## Cube View
 
-Keep Cube View clean, push all in-built function and statements like case etc. to Fact Composite View and consume it in Cube View.
+Cube connects all the measures coming from Source View to all the Dimension Basic View.
 
 ```
 -- Metadata
@@ -177,7 +188,11 @@ Keep Cube View clean, push all in-built function and statements like case etc. t
 }
 ```
 
-# Query View
+## Query View
+
+Query View will have: 
+- UI Annotations.
+- Dummy DCL.
 
 ```
 -- Metadata
@@ -197,6 +212,8 @@ Keep Cube View clean, push all in-built function and statements like case etc. t
 @Analytics: { 
   query: true  
 } 
+-- For Query Browser, service registration is not required
+@Odata.publish: true
 ```
 
 # Reference
