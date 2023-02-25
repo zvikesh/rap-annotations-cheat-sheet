@@ -1,6 +1,7 @@
 # Basic View Annotations
 
-Semantic Annotations for Consumption View
+## Semantic Annotations 
+Semantic Annotations are for Consumption View reusability
 
 ```
 -- Currency
@@ -32,7 +33,9 @@ Semantic Annotations for Consumption View
 @ObjectModel.foreignKey. association
 ```
 
-Foreign Key Associations to help derivce Value Help for Consumption View
+## Foreign Key Association
+
+Foreign Key Association annotation helps to derivce Value Help for Consumption View
 *The cardinality of a foreign key association must be either [0..1] or [1..1] / [1].
 
 ```
