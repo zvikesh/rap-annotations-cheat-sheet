@@ -8,12 +8,12 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ```
 ```
 
-# Value Help View
+## Value Help View
 
 ```
 ```
 
-# Text Table View
+## Text Table View
 
 ```
 ```
