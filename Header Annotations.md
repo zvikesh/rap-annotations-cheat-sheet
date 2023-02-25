@@ -96,8 +96,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 ## Fact Composite View
 
-Fact Composite View lists all the measures from Analytical Basic View and other helper Basic Views.
-Fact Composite View will also have all the derivation logic for the measures derived using Bult-In Fn, CASE etc.
+Fact Composite View lists all the measures from Analytical Basic View and other helper Basic Views.<br />
+Fact Composite View will also have all the derivation logic for the measures derived using Bult-In Fn, CASE etc.<br />
 If all the measures are readily available in Analytical Basic View, Fact View can be skipped.
 
 ```
