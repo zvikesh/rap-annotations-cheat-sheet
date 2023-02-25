@@ -1,3 +1,37 @@
+# Basic and Consumption View Annotations
+
+Semantic Annotations
+
+```
+-- Currency
+@Semantics.amount.currencyCode 
+@Semantics.currencyCode 
+-- Quantity
+@Semantics.quantity.unitOfMeasure 
+@Semantics.unitOfMeasure 
+-- Change Log Date
+@Semantics.systemDate...
+@Semantics.systemDate...
+-- Change Log Date
+@Semantics.systemTime...
+@Semantics.systemTime...
+-- Change Log Time Stamp
+//Used for Locking
+@Semantics.systemDateTime...
+@Semantics.systemDateTime...
+-- Text View
+@Semantics.language //Language Key
+@Semantics.text     //Text Value
+
+-- 
+@Semantics.businessDate 
+@Semantics.fiscal Information on the fiscal year
+
+@ObjectModel.association.type
+@ObjectModel.text.Association
+@ObjectModel.foreignKey. association
+```
+
 # Analytical View
 
 ## Cube Composite View
