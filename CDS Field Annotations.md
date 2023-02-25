@@ -39,7 +39,15 @@ Foreign Key Association annotation helps to derivce Value Help for Consumption V
 *The cardinality of a foreign key association must be either [0..1] or [1..1] / [1].
 
 ```
+I_ProfitCenter
+association [0..1] to I_Country as _Country on  $projection.Country = _Country.Country
+{
 @ObjectModel.foreignKey.association: '_Country'
+Country,
+}
+
+@ObjectModel.representativeKey: 'Country'
+define view I_CountryVH as select from I_Country {
 ```
 
 # Analytical View
