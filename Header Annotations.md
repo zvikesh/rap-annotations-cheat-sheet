@@ -142,6 +142,17 @@ Cube connects all the measures coming from Source View to all the Dimension Basi
 @Analytics: { 
   dataCategory: #CUBE
 }
+/* ?
+@ObjectModel.modelingPattern: #ANALYTICAL_CUBE
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_PROVIDER, #SQL_DATA_SOURCE, #CDS_MODELING_DATA_SOURCE]
+
+@Analytics.settings.maxProcessingEffort: #HIGH
+@Analytics.dataExtraction.enabled: true | false
+
+@Consumption.dbHints:
+
+@AccessControl.personalData.blocking: #BLOCKED_DATA_EXCLUDED
+*/
 ```
 
 ## Query View
@@ -170,6 +181,12 @@ Query View will have:
 } 
 -- For Query Browser, service registration is not required
 @Odata.publish: true
+/* ?
+@ObjectModel.modelingPattern: #ANALYTICAL_QUERY
+@ObjectModel.supportedCapabilities: [#ANALYTICAL_QUERY]
+
+@Analytics.settings.maxProcessingEffort: #HIGH
+*/
 ```
 
 # API Views
