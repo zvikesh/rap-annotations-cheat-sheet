@@ -2,12 +2,23 @@
 # Data Modelling
 https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
-# Database Table
+# Generic Data Models
+## Database Table
 
 ```
 ```
 
-# Basic View
+# Value Help View
+
+```
+```
+
+# Text Table View
+
+```
+```
+
+## Basic View
 
 ```
 -- Data Model
@@ -25,7 +36,9 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Composite View
+# Transactional Data Models
+
+## Composite View
 
 ```
 -- Data Model
@@ -38,7 +51,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Consumption or Projection View
+## Consumption or Projection View
 
 ```
 -- Metadata
@@ -56,7 +69,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# SEGW API View
+# API Views
+## SEGW API View
 
 ```
 @Metadata:{
@@ -83,7 +97,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# Behavoiur Definition API View
+## Behavoiur Definition API View
 
 ```
 -- Metadata
@@ -99,16 +113,6 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
     dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
-```
-
-# Value Help View
-
-```
-```
-
-# Text Table View
-
-```
 ```
 
 # Dimension View
