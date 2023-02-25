@@ -74,52 +74,6 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-# API Views
-## SEGW API View
-
-```
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
--- Data Model
-@VDM.viewType: #COMPOSITE
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
--- OData
-@ObjectModel:{
-    createEnabled: true | false 
-    updateEnabled: true | false 
-    deleteEnabled: true | false
-}
-@OData{
-    entitySet.name: ***Do not use***
-    entityType.name: ***Do not use***
-}
-```
-
-## Behavoiur Definition API View
-
-```
--- Metadata
-@Metadata:{
- allowExtensions: true,
- ignorePropagatedAnnotations: true
-}
--- Data Model
-@VDM.viewType: #COMPOSITE ?
--- Performance
-@ObjectModel.usageType:{
-    serviceQuality: #B,
-    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
-    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
-}
-```
-
 # Analytial Data Models
 
 ## Basic View as Source for Cube View or Fact Composite View
@@ -214,6 +168,52 @@ Query View will have:
 } 
 -- For Query Browser, service registration is not required
 @Odata.publish: true
+```
+
+# API Views
+## SEGW API View
+
+```
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
+-- OData
+@ObjectModel:{
+    createEnabled: true | false 
+    updateEnabled: true | false 
+    deleteEnabled: true | false
+}
+@OData{
+    entitySet.name: ***Do not use***
+    entityType.name: ***Do not use***
+}
+```
+
+## Behavoiur Definition API View
+
+```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
+-- Data Model
+@VDM.viewType: #COMPOSITE ?
+-- Performance
+@ObjectModel.usageType:{
+    serviceQuality: #B,
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
+}
 ```
 
 # Reference
