@@ -1,5 +1,12 @@
 # Analytical View
 
+## Cube Composite View
+
+```
+@DefaultAggregation: #AVG | #COUNT | #COUNT_DISTINCT | #FORMULA, #MAX | #MIN | #NONE | #SUM 
+@ObjectModel.foreignKey.association: '_BusinessTransactionType'
+```
+
 ## Query Composition View
 
 Add Filter
@@ -27,6 +34,7 @@ Default Axis
 Hide field from Consumption
 ```
 @AnalyticsDetails.query.hidden: true
+@Consumption.hidden: true
 ```
 
 Field Text
@@ -49,7 +57,8 @@ Formula
 
 ```
 @DefaultAggregation: #FORMULA
-@AnalyticsDetails.query.formula : '$projection.IntmdDebitAmtInTransCrcy' cast( cast( 1 as abap.dec(23,2)) as fis_dr_bal_wsl ) as DebitAmountInTransCrcy,  
+@AnalyticsDetails.query.formula : '$projection.EndingBalAmtInFreeDfndCrcy7 - $projection.DebitAmountInFreeDfndCrcy7 - CreditAmountInFreeDefinedCrcy7' 
+cast( cast( 1 as abap.dec(23,2)) as fis_start_bal_fsl_ui ) as StrtgBalAmtInFreeDfndCrcy7,    
 ```
 
 Exception Aggregation
