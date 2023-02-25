@@ -22,9 +22,7 @@ Add Filter
 
 Add Value Help 
 
-```
 [rap-annotations-cheat-sheet/Value Help Annotations.md](https://github.com/zvikesh/rap-annotations-cheat-sheet/blob/main/Value%20Help%20Annotations.md)
-```
 
 Default Axis
 
