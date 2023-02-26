@@ -41,15 +41,19 @@ This is legacy way and can be avoided as data can only be filtered by values use
 -- Data Model
 @VDM.viewType: #BASIC
 @ObjectModel.dataCategory: #VALUE_HELP
-@Analytics.dataCategory: #DIMENSION
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #A,
-    sizeCategory: #S,
-    dataClass: #CUSTOMIZING
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
 -- Drop Down
 @ObjectModel.resultSet.sizeCategory: #XS
+--- Analytical
+@Analytics : {
+    dataCategory: #DIMENSION, 
+    dataExtraction.enabled : true | false ?Reference?
+}
 -- Fuzzy Search
 @Search.searchable: true
 -- Foreign Key Associations
@@ -82,8 +86,8 @@ where
 -- Performance
 @ObjectModel.usageType:{
     serviceQuality: #A,
-    sizeCategory: #S,
-    dataClass: #CUSTOMIZING
+    dataClass: #CUSTOMIZING | #ORGANIZATIONAL | #MASTER | #TRANSACTIONAL,
+    sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
 -- Fuzzy Search
 @Search.searchable: true
