@@ -365,7 +365,3 @@ Generates the Analytical Query with name as 2C+<DDL SQL Name> for the consumptio
   #AGGREGATIONLEVEL: ?
 }
 ```
-
-# Find View consuming particular Header Annotation
-
-![](https://github.com/zvikesh/rap-annotations-cheat-sheet/blob/76fa6cb2ac073122e3185ad7d9ceeff9191cf632/2023-01-27%2000_09_19.jpg)
