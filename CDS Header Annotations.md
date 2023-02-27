@@ -12,6 +12,11 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Basic View (Generic)
 
 ```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
 -- Data Model
 @VDM.viewType: #BASIC
 -- Performance
@@ -32,6 +37,11 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Composite View
 
 ```
+-- Metadata
+@Metadata:{
+ allowExtensions: true,
+ ignorePropagatedAnnotations: true
+}
 -- Data Model
 @VDM.viewType: #COMPOSITE
 -- Performance
