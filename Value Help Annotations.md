@@ -1,3 +1,17 @@
+# Multi Dimensional Report
+- @ObjectModel.foreignkey.Assocaiton
+
+Query View
+- @Consumption.derivation
+- @Consumption.filter (Add Filter, Not for Value Help)
+- @Consumption.hidden:true (Only for Parameter)
+
+Deprecated
+- @ValueHelp:’_AssociationName’
+
+# List Report
+- @Consumption.valueHelpDefinition
+
 # Paremeter and Field Annotations
 
 ## @Consumption.derivation
