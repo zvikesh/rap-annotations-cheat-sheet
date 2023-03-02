@@ -74,7 +74,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
     sizeCategory: #S (#CUSTOMIZING) | #M (#ORGANIZATIONAL) | #L (#MASTER) | #XL  (#TRANSACTIONAL)
 }
 -- Visual Key
-@ObjectModel.semanticKey: ['AirlineID']
+@ObjectModel.semanticKey: ['SemanticKey']
 ```
 
 # Analytical Data Models
