@@ -174,6 +174,10 @@ define role <C_QueryName> {
     grant select on <C_QueryName
     where <Any Key Field> is null and <Any Key Field> is not null;
 }
+or
+define role <C_QueryName> {
+    GRANT SELECT ON <C_QueryName WHERE FALSE;
+}
 */
 -- Metadata
 @Metadata:{
