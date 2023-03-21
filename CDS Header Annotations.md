@@ -12,6 +12,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Basic View (Generic)
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -37,6 +39,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Composite View
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -60,6 +64,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Consumption or Projection View
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -82,6 +88,8 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ## Analytical Basic View (Source for Cube View or Fact Composite View)
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -104,6 +112,8 @@ Fact Composite View will also have all the derivation logic for the measures der
 If all the measures are readily available in Analytical Basic View, Fact View can be skipped.
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -211,6 +221,9 @@ define role <C_QueryName> {
 ## SEGW API Composite View
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
+-- Metadata
 @Metadata:{
  allowExtensions: true,
  ignorePropagatedAnnotations: true
@@ -238,6 +251,8 @@ define role <C_QueryName> {
 ## Behavoiur Definition API ? View
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
