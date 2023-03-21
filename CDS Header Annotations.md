@@ -168,7 +168,7 @@ Query View will have:
 
 ```
 -- DCL
-@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+@AccessControl.authorizationCheck: #CHECK
 /* DCL Code 
 define role <C_QueryName> {
     grant select on <C_QueryName
