@@ -128,6 +128,8 @@ If all the measures are readily available in Analytical Basic View, Fact View ca
 Cube connects all the measures coming from Source View to all the Dimension Basic View.
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #CHECK
 -- Metadata
 @Metadata:{
  allowExtensions: true,
@@ -165,6 +167,14 @@ Query View will have:
 - Dummy DCL.
 
 ```
+-- DCL
+@AccessControl.authorizationCheck: #PRIVILEGED_ONLY
+/* DCL Code 
+define role <C_QueryName> {
+    grant select on <C_QueryName
+    where <Any Key Field> is null and <Any Key Field> is not null;
+}
+*/
 -- Metadata
 @Metadata:{
  allowExtensions: true,
