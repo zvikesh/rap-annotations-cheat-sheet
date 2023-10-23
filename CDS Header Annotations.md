@@ -1,8 +1,25 @@
+# Reference Master
+
+Service Quality </br>
+#A (<=3 Tables) </br>
+#B (<=5 Tables) </br>
+#C (<=15 Tables) </br>
+
+Size Category </br>
+#S (<1000) </br>
+#M (<1,00,000) </br>
+#L (<1,00,00,000) </br>
+#XL (<1,00,00,00,000) </br>
+#XXL (>1,00,00,00,000) </br>
+
+Data Class </br>
+#MASTER (Rarely Changed Data) </br>
+#TRANSACTIONAL (Frequently Changed Data) </br>
 
 # Data Modelling
 https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
-# Generic Data Models
+# Examples
 
 ## Database Table
 
