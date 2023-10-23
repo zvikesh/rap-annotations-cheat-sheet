@@ -35,7 +35,6 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 * Add Semantic Annotations).
 * Add Administration Structure, if dataClass is _Master/Transactional_.
-* 
 
 
 # Transactional Data Models
