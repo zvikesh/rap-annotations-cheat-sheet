@@ -8,6 +8,7 @@ created_at     : timestampl;
 @Semantics.user.lastChangedBy: true
 last_changed_by : syuname;
 @Semantics.systemDateTime.lastChangedAt: true
+//@Semantics.systemDateTime.localInstanceLastChangedAt: true  //Check the difference 
 ```
 
 # Curreny
