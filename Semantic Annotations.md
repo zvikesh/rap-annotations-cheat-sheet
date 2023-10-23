@@ -19,3 +19,10 @@ price           as Price,
 //@Semantics.currencyCode: true ***Not allowed in View Entity***
 currency_code   as CurrencyCode,
 ```
+
+# Enduser Text
+
+```
+@EndUserText:{ label: 'Airline', quickInfo: 'Airline' }
+AirlineID
+```
