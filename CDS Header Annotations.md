@@ -33,7 +33,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 }
 ```
 
-* Add [Semantic Annotations] (https://github.com/zvikesh/rap-annotations-cheat-sheet/blob/main/Semantic%20Annotations.md).
+* Add Semantic Annotations).
 * Add Administration Structure, if dataClass is _Master/Transactional_.
 * 
 
