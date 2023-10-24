@@ -40,7 +40,6 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 * Add Semantic Annotations.
 * Association of administration structure to I_User with \[0..1] cardinality.
 
-
 # Transactional Data Models
 
 ## Composite View
