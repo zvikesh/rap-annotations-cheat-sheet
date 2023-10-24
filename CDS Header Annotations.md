@@ -10,6 +10,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 * Active Table.
 * UUID Table.
+* Always include administration structure.
 
 ## Basic View (Generic)
 
@@ -37,7 +38,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 ```
 
 * Add Semantic Annotations.
-* Add Administration Structure.
+* Associate Administration Structure to I_Userwith \[0..1] cardinality.
 
 
 # Transactional Data Models
