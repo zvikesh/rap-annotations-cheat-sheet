@@ -1,9 +1,8 @@
-Context
+# List Page Header
 
-# List Items
 ```
-@UI.lineItem: [ { position: 30 } ]
-Connection.airport_from_id as DepartureAirport,
+@UI.headerInfo: { typeName: 'Sales Order',
+                  typeNamePlural: 'Sales Orders' }
 ```
 
 # List Page Filter
@@ -25,7 +24,19 @@ define view entity ZVKS_C_Flight_R
   key AirlineID,
 ```
 
-# Object Page
+# List Items
+
+```
+@UI.lineItem: [ { position: 30 } ]
+Connection.airport_from_id as DepartureAirport,
+```
+
+# Object Page Header
+
+```
+```
+
+# Object Page Facets
 Related Information
 
 ```
@@ -40,7 +51,5 @@ define view ZVKS_C_Connection_R
 @UI: { identification:[ { position: 40, label: 'Destination Airport Code'} ] }
 Connection.airport_to_id   as DestinationAirport,
 ```
-
-# List Filter
 
 
