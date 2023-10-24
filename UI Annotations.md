@@ -6,11 +6,23 @@ Context
 Connection.airport_from_id as DepartureAirport,
 ```
 
-# List Report Header
+# List Page Filter
 
 ```
 @UI.selectionField: [ { position: 10 } ] 
 Connection.airport_from_id as DepartureAirport,
+```
+
+```
+-- Enable Fuzzy Search
+@Search.searchable: true
+define view entity ZVKS_C_Flight_R
+  as select from ZVKS_R_Flight
+{
+      @Search.defaultSearchElement: true
+      @Search.fuzzinessThreshold: 0.7
+      //@ObjectModel.text.association: '_Airline'
+  key AirlineID,
 ```
 
 # Object Page
@@ -31,14 +43,4 @@ Connection.airport_to_id   as DestinationAirport,
 
 # List Filter
 
-```
--- Enable Fuzzy Search
-@Search.searchable: true
-define view entity ZVKS_C_Flight_R
-  as select from ZVKS_R_Flight
-{
-      @Search.defaultSearchElement: true
-      @Search.fuzzinessThreshold: 0.7
-      //@ObjectModel.text.association: '_Airline'
-  key AirlineID,
-```
+
