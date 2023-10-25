@@ -3,7 +3,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 # Data Dictionary
 
-## Database Table
+## Database Table (Active/Draft)
 
 ```
 ```
