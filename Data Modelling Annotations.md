@@ -15,10 +15,6 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 Reference: https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations 
 
-* Active Table.
-* UUID Table.
-* Include administration structure.
-
 ## Basic View (Generic)
 
 ```
