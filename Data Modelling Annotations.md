@@ -1,7 +1,7 @@
 # Data Modelling
 https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
-# Examples
+# Data Dictionary
 
 ## Database Table
 
