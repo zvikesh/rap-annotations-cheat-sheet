@@ -13,7 +13,7 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 @AbapCatalog.dataMaintenance : #LIMITED | #ALLOWED | #NOT_ALLOWED
 ```
 
-Reference: https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations
+Reference: https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations 
 
 * Active Table.
 * UUID Table.
