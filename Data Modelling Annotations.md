@@ -5,11 +5,15 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 ## Database Table (Active/Draft)
 
-https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations
-
+```
+@EndUserText.label : 'Flight'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE | #NOT_CLASSIFIED | #EXTENSIBLE_CHARACTER | #EXTENSIBLE_CHARACTER_NUMERIC | #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT | #GLOBAL_TEMPORARY
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #LIMITED | #ALLOWED | #NOT_ALLOWED
 ```
 
-```
+Reference: https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations
 
 * Active Table.
 * UUID Table.
