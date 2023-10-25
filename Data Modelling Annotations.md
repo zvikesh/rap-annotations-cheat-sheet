@@ -5,7 +5,10 @@ https://app.excalidraw.com/l/5eMbpiBu0l3/5sRgLPpDEZj
 
 ## Database Table (Active/Draft)
 
+https://help.sap.com/docs/btp/sap-abap-development-user-guide/database-table-annotations
+
 ```
+
 ```
 
 * Active Table.
