@@ -1,0 +1,32 @@
+@Metadata.allowExtensions: true
+define view entity ZC_SalesOrderItem
+
+   as select from ZI_SalesOrderItem
+
+{
+
+       @EndUserText.label: 'Sales Order'
+
+   key SalesOrder,
+
+   key SalesOrderItem,
+
+       Product
+
+}
+
+@Metadata.layer: #CUSTOMER | PARTENR | INDUSTRY | LOCALIZATION
+
+annotate view ZC_SalesOrderItem with
+
+{
+
+   @UI.lineItem: [{importance: #HIGH}]
+
+   SalesOrder;
+
+   @UI.lineItem: [{importance: #HIGH}]
+
+   SalesOrderItem;
+
+}
